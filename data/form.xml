@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<items>
+    <item type="settings"  inputWidth="220"  position="label-left"  
+    labelWidth="70"/>
+    <item type="select"  label="select" labelInline="true" labelWidth="50px"
+        <item  value="0" text="0" />
+        <item value="1" text="1" />
+        <item value="2" text="2" />
+    />
+    
+</items>
