@@ -46,6 +46,7 @@
                 var str = [ // Estructura para el select
                     { type:"settings" , labelWidth:80, inputWidth:150, position:"absolute"  },
                     { type:"select" , name:"form_select_1", label:"Combo", labelWidth:250, labelLeft:425, labelTop:75, inputLeft:425, inputTop:100, options:[
+<<<<<<< HEAD
                                 { value:"6",   text:"- Seleccione -", selected:"true" },
                                 { value:"1",  text:"1" },
                                 { value:"2",  text:"2" },
@@ -53,13 +54,24 @@
                                 { value:"4", text: "4" },//nuevo commit
                                 { value:"5",  text:"reset" },
                                 { value:"10", text:"Todas" }
+=======
+                                { value:"6", text:"- Seleccione -", selected:"true" },
+                                { value:"1", text:"1" },
+                                { value:"2", text:"2" },
+                                { value:"3", text:"3" },
+                                { value:"4", text: "4" },
+                                { value:"5", text: "5" } , //nueva rama 1
+                                { value:"6", text:"reset" },
+                                { value:"10",text:"Todas" },
+                                
+>>>>>>> 0b21aa953b89616e09fcb68cf6f6a942e958e787
                         ]}
                 ];
                 
                 // Layout A
                 var combo = layout.cells("a").attachForm(str); // Carga de la estructura del formulario
                 combo.attachEvent("onChange", function(id, val){  
-                    if (val!=5) {
+                    if (val!=6) {
                         getFrases(val); 
                     }else{
                         console.log(val);
